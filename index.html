@@ -1,2 +1,61 @@
-<h1> Mi portfolio </h1>
-<p>Modificacion en el Repositorio Remoto.</p>
+<!doctype HTML>
+<html lang="en">
+<html>
+ <head>
+  <!--Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Bootstrap CSS-->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <title> INDEX </title>
+ </head>
+ <body>
+  <ul>
+   <li><a href="#home">Home</a></li>
+   <li><a href="#cews">News</a></li>
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">About me</a>
+     <div class="dropdown-content">
+      <a href="#home">Profile</a>
+      <a href="#home">Experience</a>
+     </div>
+   </li>
+   <li><a href="#contact">Contact</a></li>
+   <div class="search-container">
+    <form action="/action_page.php">
+     <input type="text" placeholder="Search.." name="search">
+     <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+   </div>
+  </ul>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-8">
+    </div>
+    <div class="col">
+    </div>
+    <div class="col-3">
+     <form>
+      <div class="mb-3">
+       <label for="idE" class="form-label">Correo</label>
+       <input type="email" class="form-control" id="idE" aria-describedby="idEH">
+       <div id="idEH" class="form-text">Debe ser un correo válido.</div>
+      </div>
+      <div class="mb-3">
+       <label for="exampleInputPassword1" class="form-label">Password</label>
+       <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check">
+       <input type="checkbox" class="form-check-input" id="exampleCheck1">
+       <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+      </div>
+      <button type="submit" class="btn btn-dark">Enviar</button>
+     </form>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+   
