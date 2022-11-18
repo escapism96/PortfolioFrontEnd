@@ -4,60 +4,53 @@
  <head>
   <!--Meta tags-->
   <meta charset="utf-8">
+  <meta name="description" content="Portfolio Web">
+  <meta name="author" content="Julián Segarra">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--Bootstrap CSS-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <!--Scripts-->
-  <script src="main.js"></script>
   <title> INDEX </title>
  </head>
  <body>
-  <ul>
-   <li><a href="#home">Home</a></li>
-   <li><a href="#news">News</a></li>
-   <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">About me</a>
-     <div class="dropdown-content">
-      <a href="#profile">Profile</a>
-      <a href="#experience">Experience</a>
-     </div>
-   </li>
-   <li><a href="#contact">Contact</a></li>
-   <div class="search-container">
-    <form action="/action_page.php">
-     <input type="text" placeholder="Search.." name="search">
-     <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-   </div>
-  </ul>
-  <div class="container-fluid">
-   <div class="row">
-    <div class="col-8">
+  <div class="mat-card" id="first-card">
+    <br></br>
+    <div id="card-banner"><img src="imgs/banner.jpg" alt="The banner of the Web."></div>
+    <button class="button"><i class="fa fa-pencil"></i><a href="#"></a></button>
+    <div id="profile-pic"><a href="#"><img src="imgs/profile.jpg" alt="Your profile picture."></a></div>
+    <div id="card-titles">
+      <h1>Julián Segarra</h1><h2>Desarrolador Web FullStack Jr.</h2>
     </div>
-    <div class="col">
+    <div id="info-contacto">
+      <span>Rafaela, Santa Fe (Argentina)</span>
+      <span><a href="#">Información de contacto</a></span>
     </div>
-    <div class="col-3">
-     <form>
-      <div class="mb-3">
-       <label for="idE" class="form-label">Correo</label>
-       <input type="email" class="form-control" id="idE" aria-describedby="idEH">
-       <div id="idEH" class="form-text">Debe ser un correo válido.</div>
-      </div>
-      <div class="mb-3">
-       <label for="exampleInputPassword1" class="form-label">Password</label>
-       <input type="password" class="form-control" id="exampleInputPassword1">
-      </div>
-      <div class="mb-3 form-check">
-       <input type="checkbox" class="form-check-input" id="exampleCheck1">
-       <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
-      </div>
-      <button type="submit" class="btn btn-dark">Enviar</button>
-     </form>
-    </div>
-   </div>
+  </div>
+  <div class="mat-card" id="temp-card">
+    <button class="button" onclick="cambiar_intro()"><i class="fa fa-pencil"></i><a href="#"></a></button>
+    <h1>Introducción</h1>
+    <p id="intro-text">Pequeña introducción va aquí, 😴</p>
+    <input id="edit-intro" type="text" oninput="myFunction1(this.value)" style="display: none">
+    <input type="file" accept=".txt" id="file" onchange="showFile1(this)"> 
+  </div>
+  <div class="mat-card" id="temp-card">
+    <button class="button" onclick="cambiar_exp()"><i class="fa fa-pencil"></i><a href="#"></a></button>
+    <h1>Experiencía</h1>
+    <p id="exp-text">Las experiencías van aquí, 😅</p>
+    <input id="edit-exp" type="text" oninput="myFunction2(this.value)" style="display: none">
+    <input type="file" accept=".txt" id="file" onchange="showFile2(this)"> 
+  </div>
+  <div class="mat-card" id="temp-card">
+    <button class="button" onclick="cambiar_edu()"><i class="fa fa-pencil"></i><a href="#"></a></button>
+    <h1>Educación</h1>
+    <p id="edu-text">La educación va aquí, 😵</p>
+    <input id="edit-edu" type="text" oninput="myFunction3(this.value)" style="display: none">
+    <input type="file" accept=".txt" id="file" onchange="showFile3(this)"> 
   </div>
  </body>
+ <script src="output/app.js"></script>
+ <script src="output/objects.js"></script>
 </html>
    
